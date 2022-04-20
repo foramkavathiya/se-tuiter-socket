@@ -1,4 +1,5 @@
-const io = require("socket.io")(8900, {
+const io = require("socket.io")("https://tiny-fox-3c36d5.netlify.app", {
+  "rejectUnauthorized": false,
     cors: {
       origin: "https://beamish-cascaron-902bd4.netlify.app",
     },
